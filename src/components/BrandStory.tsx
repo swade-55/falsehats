@@ -16,13 +16,13 @@ export default function BrandStory() {
           Not Your<br />Average<br />Hat Brand
         </h2>
         <p className="mt-6 text-sm leading-relaxed opacity-80 max-w-md">
-          FALSEHATS was born from the idea that headwear should be more than an accessory —
+          CORAM DEO SUPPLY was born from the idea that headwear should be more than an accessory —
           it should be a statement. Every cap we make is designed with intention, crafted with
           premium materials, and built to stand out from the crowd.
         </p>
         <p className="mt-4 text-sm leading-relaxed opacity-80 max-w-md">
           We don't follow trends. We set them. From our signature snapbacks to our limited
-          edition drops, every piece carries the FALSEHATS DNA — bold, unapologetic, and
+          edition drops, every piece carries the CORAM DEO SUPPLY DNA — bold, unapologetic, and
           always authentic.
         </p>
         <Link

@@ -2,7 +2,7 @@ import { X, Plus, Minus, Trash2 } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 export default function CartDrawer() {
-  const { items, isOpen, closeCart, removeItem, updateQuantity, totalPrice } = useCart();
+  const { items, isOpen, isCheckingOut, closeCart, removeItem, updateQuantity, checkout, totalPrice } = useCart();
 
   if (!isOpen) return null;
 
@@ -92,8 +92,12 @@ export default function CartDrawer() {
               <span className="text-sm font-semibold">${totalPrice.toFixed(2)}</span>
             </div>
             <p className="text-xs text-gray-500 mb-4">Shipping & taxes calculated at checkout</p>
-            <button className="w-full bg-[rgb(28,28,28)] text-white py-4 text-xs tracking-[0.18em] uppercase border-none hover:bg-[rgb(50,50,50)] transition-colors">
-              Checkout
+            <button
+              onClick={checkout}
+              disabled={isCheckingOut}
+              className="w-full bg-[rgb(28,28,28)] text-white py-4 text-xs tracking-[0.18em] uppercase border-none hover:bg-[rgb(50,50,50)] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {isCheckingOut ? 'Redirecting...' : 'Checkout'}
             </button>
           </div>
         )}

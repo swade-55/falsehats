@@ -7,11 +7,8 @@ const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'Shop All', to: '/shop' },
   { label: 'Snapbacks', to: '/shop?category=snapbacks' },
-  { label: 'Fitted', to: '/shop?category=fitted' },
+  { label: 'Athletic', to: '/shop?category=athletic' },
   { label: 'Dad Hats', to: '/shop?category=dad-hats' },
-  { label: 'Beanies', to: '/shop?category=beanies' },
-  { label: 'Trucker', to: '/shop?category=trucker' },
-  { label: 'Bucket Hats', to: '/shop?category=bucket' },
   { label: 'About', to: '/about' },
 ];
 
@@ -41,7 +38,7 @@ export default function Header() {
         {/* Logo */}
         <Link to="/" className="text-center">
           <h1 className="text-2xl tracking-[0.25em] uppercase font-bold m-0 leading-none">
-            FALSEHATS
+            CORAM DEO SUPPLY
           </h1>
         </Link>
 
@@ -96,7 +93,7 @@ export default function Header() {
         </button>
 
         <Link to="/">
-          <h1 className="text-lg tracking-[0.25em] uppercase font-bold m-0">FALSEHATS</h1>
+          <h1 className="text-lg tracking-[0.25em] uppercase font-bold m-0">CORAM DEO SUPPLY</h1>
         </Link>
 
         <div className="flex items-center gap-3">

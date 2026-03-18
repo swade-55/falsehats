@@ -124,7 +124,7 @@ export default function ProductDetail() {
           <div className="mt-10 border-t border-[rgb(221,221,221)]">
             {[
               { key: 'description', label: 'Description', content: product.description },
-              { key: 'details', label: 'Details', content: 'Premium construction with quality materials. Embroidered FALSEHATS logo. One size fits most (adjustable).' },
+              { key: 'details', label: 'Details', content: 'Premium construction with quality materials. Embroidered CORAM DEO SUPPLY logo. One size fits most (adjustable).' },
               { key: 'shipping', label: 'Shipping & Returns', content: 'Free shipping on orders over $55. Standard delivery 5-7 business days. Free returns within 30 days of delivery.' },
             ].map(section => (
               <div key={section.key} className="border-b border-[rgb(221,221,221)]">

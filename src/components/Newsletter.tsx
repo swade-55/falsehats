@@ -23,7 +23,7 @@ export default function Newsletter() {
 
       {submitted ? (
         <p className="mt-8 text-sm tracking-[0.18em] uppercase font-semibold text-green-600">
-          You're in. Welcome to FALSEHATS.
+          You're in. Welcome to CORAM DEO SUPPLY.
         </p>
       ) : (
         <form onSubmit={handleSubmit} className="mt-8 flex max-w-lg mx-auto">
